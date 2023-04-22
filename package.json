@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp -r dist docs",
+    "build": "tsc && vite build",
+    "buildgh": "tsc && vite build && cp -r dist docs",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "git": "git add . && git commit && git push origin main"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
